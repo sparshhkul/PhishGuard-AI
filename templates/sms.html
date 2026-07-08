@@ -1,3 +1,82 @@
-<h1 style="text-align:center; margin-top:100px;">
-Coming Soon 🚀
-</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Shield | PhishGuard AI</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="scanner-page">
+
+    <div class="glass-card scanner-card">
+
+        <a href="/scanner" class="back-btn">
+            ← Back
+        </a>
+
+        <span class="badge">
+            SMS Shield
+        </span>
+
+        <h1>💬 Analyze SMS</h1>
+
+        <p>
+            Paste the suspicious SMS below.
+        </p>
+
+        <textarea
+            id="smsInput"
+            placeholder="Paste suspicious SMS here..."></textarea>
+
+        <button
+            id="scanSmsBtn"
+            class="primary-btn">
+
+            Scan SMS →
+
+        </button>
+
+    </div>
+
+</div>
+
+<div id="loadingOverlay">
+
+    <div class="flux-loader">
+
+        <h2>🛡 AI Security Analysis</h2>
+
+        <div class="progress-container">
+            <div id="progressBar"></div>
+        </div>
+
+        <div id="progressPercent">0%</div>
+
+        <p id="loaderText">Initializing...</p>
+
+        <div class="steps">
+
+            <div id="step1">○ Read SMS</div>
+            <div id="step2">○ Detect Keywords</div>
+            <div id="step3">○ Intent Analysis</div>
+            <div id="step4">○ AI Detection</div>
+            <div id="step5">○ Generate Report</div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

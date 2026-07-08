@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Scan Result | PhishGuard AI</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="scanner-page">
+
+    <div class="glass-card scanner-card">
+
+        <span class="badge">
+            Scan Complete
+        </span>
+
+        <h1>🛡 Threat Analysis</h1>
+
+        <div class="risk-score">
+
+            92%
+
+        </div>
+
+        <div class="risk-label">
+
+            🔴 HIGH RISK
+
+        </div>
+
+        <div class="result-box">
+
+            <h3>Detected Threats</h3>
+
+            <ul>
+
+                <li>✔ Suspicious Keywords</li>
+
+                <li>✔ Suspicious URL Found</li>
+
+                <li>✔ Urgent Language Detected</li>
+
+                <li>✔ Phishing Pattern Matched</li>
+
+            </ul>
+
+        </div>
+
+        <div class="recommend-box">
+
+            <h3>Recommendation</h3>
+
+            <p>
+
+                Do not click any links inside this email.
+
+                Delete the message immediately or verify the sender.
+
+            </p>
+
+        </div>
+
+        <a href="/scanner" class="primary-btn launch-btn">
+
+            Scan Another
+
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,40 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>PhishGuard AI</title>
 
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
 </head>
 
 <body>
 
-<div class="container">
+    <!-- Animated Background -->
+    <div class="background"></div>
 
-    <h1>🛡️ PhishGuard AI</h1>
+    <!-- Hero Section -->
+    <main class="hero">
 
-    <p>
-        AI-Powered Scam Detection System
-    </p>
+        <div class="glass-card">
 
-    <div class="button-container">
+            <span class="badge">
+                AI Powered Cybersecurity
+            </span>
 
-        <a href="/email">
-            <button>Email Shield</button>
-        </a>
+            <h1>
+                🛡️ PHISHGUARD AI
+            </h1>
 
-        <a href="/url">
-            <button>URL Shield</button>
-        </a>
+            <h2 class="hero-title">
 
-        <a href="/sms">
-            <button>SMS Shield</button>
-        </a>
+                Detect
 
-    </div>
+                <span class="rotating-container">
 
-</div>
+                    <span class="rotating-word active">
+                        Phishing Emails
+                    </span>
+
+                    <span class="rotating-word">
+                        Malicious URLs
+                    </span>
+
+                    <span class="rotating-word">
+                        SMS Scams
+                    </span>
+
+                    <span class="rotating-word">
+                        Online Fraud
+                    </span>
+
+                </span>
+
+            </h2>
+
+            <p>
+
+                Protect yourself from phishing attacks, malicious websites and
+                fraudulent SMS using Machine Learning and intelligent threat detection.
+
+            </p>
+
+            <a href="/scanner" class="primary-btn launch-btn">
+    Launch Scanner →
+</a>
+
+        </div>
+
+    </main>
+
+    <!-- Feature Cards -->
+
+    <section class="features">
+
+        <div class="feature-card">
+
+            <div class="icon">📧</div>
+
+            <h3>Email Shield</h3>
+
+            <p>
+                Detect phishing emails using intelligent content analysis.
+            </p>
+
+            <a href="/email" class="card-btn">
+                Scan Email →
+            </a>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="icon">🌐</div>
+
+            <h3>URL Shield</h3>
+
+            <p>
+                Analyze suspicious links and detect malicious websites.
+            </p>
+
+            <a href="/url" class="card-btn">
+                Scan URL →
+            </a>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="icon">💬</div>
+
+            <h3>SMS Shield</h3>
+
+            <p>
+                Identify scam SMS messages before they fool users.
+            </p>
+
+            <a href="/sms" class="card-btn">
+                Scan SMS →
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Stats Section -->
+
+    <section class="stats">
+
+        <div class="stat-box">
+
+            <h2>98%</h2>
+
+            <span>Detection Accuracy</span>
+
+        </div>
+
+        <div class="stat-box">
+
+            <h2>&lt; 1 sec</h2>
+
+            <span>Average Scan Time</span>
+
+        </div>
+
+        <div class="stat-box">
+
+            <h2>1000+</h2>
+
+            <span>Threat Patterns</span>
+
+        </div>
+
+    </section>
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
 </body>
+
 </html>

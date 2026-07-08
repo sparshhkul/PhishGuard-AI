@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Choose Scanner | PhishGuard AI</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="scanner-page">
+
+    <div class="glass-card">
+
+        <span class="badge">
+            AI Powered Cybersecurity
+        </span>
+
+        <h1>🛡 Choose Scanner</h1>
+
+        <p style="margin-bottom:40px;">
+            Select the type of content you want to analyze.
+        </p>
+
+        <div class="features">
+
+            <div class="feature-card">
+
+                <div class="icon">📧</div>
+
+                <h3>Email Shield</h3>
+
+                <p>
+                    Detect phishing emails using AI analysis.
+                </p>
+
+                <a href="/email" class="card-btn">
+                    Scan Email →
+                </a>
+
+            </div>
+
+            <div class="feature-card">
+
+                <div class="icon">🌐</div>
+
+                <h3>URL Shield</h3>
+
+                <p>
+                    Analyze suspicious websites and phishing links.
+                </p>
+
+                <a href="/url" class="card-btn">
+                    Scan URL →
+                </a>
+
+            </div>
+
+            <div class="feature-card">
+
+                <div class="icon">💬</div>
+
+                <h3>SMS Shield</h3>
+
+                <p>
+                    Detect scam SMS messages using AI.
+                </p>
+
+                <a href="/sms" class="card-btn">
+                    Scan SMS →
+                </a>
+
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <a href="/" class="back-btn">
+            ← Back Home
+        </a>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
