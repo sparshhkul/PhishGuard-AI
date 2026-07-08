@@ -134,12 +134,6 @@ function startScan(type){
 
             clearInterval(timer);
 
-            setTimeout(()=>{
-
-                window.location.href="/result";
-
-            },700);
-
         }
 
     },40);
@@ -151,25 +145,28 @@ function startScan(type){
 // EMAIL
 // ======================================
 
-const emailBtn=document.getElementById("scanBtn");
+const emailBtn = document.getElementById("scanBtn");
 
-if(emailBtn){
+if (emailBtn) {
 
-emailBtn.onclick=function(){
+    emailBtn.onclick = function () {
 
-const value=document.getElementById("emailInput").value.trim();
+        const email = document.getElementById("emailInput").value.trim();
 
-if(value===""){
+        if (email === "") {
+            alert("Please paste an email.");
+            return;
+        }
 
-alert("Paste an email.");
+        startScan("email");
 
-return;
+        setTimeout(() => {
 
-}
+            document.getElementById("emailForm").submit();
 
-startScan("email");
+        }, 3500);
 
-}
+    };
 
 }
 

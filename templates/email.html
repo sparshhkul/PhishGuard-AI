@@ -49,21 +49,25 @@
 
         </p>
 
-        <textarea
+        <form id="emailForm" action="/predict-email" method="POST">
 
-            id="emailInput"
 
-            placeholder="Paste suspicious email here..."></textarea>
+    <textarea
+        id="emailInput"
+        name="email"
+        placeholder="Paste suspicious email here..."
+        required></textarea>
 
-        <button
+    <button
+    type="button"
+    id="scanBtn"
+    class="primary-btn">
 
-            id="scanBtn"
+    Scan Email →
 
-            class="primary-btn">
+    </button>
 
-            Scan Email →
-
-        </button>
+</form>
 
     </div>
 

@@ -26,56 +26,76 @@
     <div class="glass-card scanner-card">
 
         <span class="badge">
-            Scan Complete
+
+            AI Analysis Complete
+
         </span>
 
-        <h1>🛡 Threat Analysis</h1>
+        <h1>🛡 Scan Result</h1>
 
-        <div class="risk-score">
+        {% if color == "green" %}
 
-            92%
+            <div class="risk-score" style="color:#22c55e;">
 
-        </div>
+                {{ risk }}%
 
-        <div class="risk-label">
+            </div>
 
-            🔴 HIGH RISK
+            <div class="risk-label" style="color:#22c55e;">
 
-        </div>
+                ✅ {{ prediction }}
 
-        <div class="result-box">
+            </div>
 
-            <h3>Detected Threats</h3>
+            <div class="recommend-box">
 
-            <ul>
+                <h3>Recommendation</h3>
 
-                <li>✔ Suspicious Keywords</li>
+                <p>
 
-                <li>✔ Suspicious URL Found</li>
+                    This email appears to be legitimate.
 
-                <li>✔ Urgent Language Detected</li>
+                    However, always verify unexpected requests before clicking links.
 
-                <li>✔ Phishing Pattern Matched</li>
+                </p>
 
-            </ul>
+            </div>
 
-        </div>
+        {% else %}
 
-        <div class="recommend-box">
+            <div class="risk-score" style="color:#ef4444;">
 
-            <h3>Recommendation</h3>
+                {{ risk }}%
 
-            <p>
+            </div>
 
-                Do not click any links inside this email.
+            <div class="risk-label" style="color:#ef4444;">
 
-                Delete the message immediately or verify the sender.
+                🚨 {{ prediction }}
 
-            </p>
+            </div>
 
-        </div>
+            <div class="recommend-box">
 
-        <a href="/scanner" class="primary-btn launch-btn">
+                <h3>Recommendation</h3>
+
+                <p>
+
+                    This email looks suspicious.
+
+                    Do not click links or download attachments.
+
+                    Verify the sender before taking any action.
+
+                </p>
+
+            </div>
+
+        {% endif %}
+
+        <br>
+
+        <a href="/scanner" class="primary-btn">
 
             Scan Another
 
