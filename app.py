@@ -44,7 +44,7 @@ def sms():
 
 
 # ==========================
-# AI EMAIL PREDICTION
+# EMAIL AI
 # ==========================
 @app.route("/predict-email", methods=["POST"])
 def predict_email_route():
@@ -61,5 +61,36 @@ def predict_email_route():
     )
 
 
+# ==========================
+# URL DEMO RESULT
+# ==========================
+@app.route("/result-demo-url")
+def result_demo_url():
+
+    return render_template(
+        "result.html",
+        prediction="Suspicious URL",
+        risk=89,
+        color="red"
+    )
+
+
+# ==========================
+# SMS DEMO RESULT
+# ==========================
+@app.route("/result-demo-sms")
+def result_demo_sms():
+
+    return render_template(
+        "result.html",
+        prediction="Scam SMS",
+        risk=94,
+        color="red"
+    )
+
+
+# ==========================
+# RUN APP
+# ==========================
 if __name__ == "__main__":
     app.run(debug=True)

@@ -175,25 +175,30 @@ if (emailBtn) {
 // URL
 // ======================================
 
-const urlBtn=document.getElementById("scanUrlBtn");
+const urlBtn = document.getElementById("scanUrlBtn");
 
-if(urlBtn){
+if (urlBtn) {
 
-urlBtn.onclick=function(){
+    urlBtn.onclick = function () {
 
-const value=document.getElementById("urlInput").value.trim();
+        const value = document.getElementById("urlInput").value.trim();
 
-if(value===""){
+        if (value === "") {
+            alert("Please paste a URL.");
+            return;
+        }
 
-alert("Paste a URL.");
+        startScan("url");
 
-return;
+        setTimeout(() => {
 
-}
+            document.getElementById("loadingOverlay").style.display = "none";
 
-startScan("url");
+            window.location.href = "/result-demo-url";
 
-}
+        }, 4200);
+
+    };
 
 }
 
@@ -202,24 +207,29 @@ startScan("url");
 // SMS
 // ======================================
 
-const smsBtn=document.getElementById("scanSmsBtn");
+const smsBtn = document.getElementById("scanSmsBtn");
 
-if(smsBtn){
+if (smsBtn) {
 
-smsBtn.onclick=function(){
+    smsBtn.onclick = function () {
 
-const value=document.getElementById("smsInput").value.trim();
+        const value = document.getElementById("smsInput").value.trim();
 
-if(value===""){
+        if (value === "") {
+            alert("Please paste an SMS.");
+            return;
+        }
 
-alert("Paste an SMS.");
+        startScan("sms");
 
-return;
+        setTimeout(() => {
 
-}
+            document.getElementById("loadingOverlay").style.display = "none";
 
-startScan("sms");
+            window.location.href = "/result-demo-sms";
 
-}
+        }, 4200);
+
+    };
 
 }
