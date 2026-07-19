@@ -1,180 +1,219 @@
-PhishGuard AI 🛡️
+<div align="center">
 
-An AI-powered phishing detection system that analyzes Emails, URLs, and SMS messages using Machine Learning and Flask.
+# 🛡️ PhishGuard AI
 
+### AI-Powered Phishing Detection System
 
+Detect phishing Emails, URLs, and SMS messages using Machine Learning and Flask.
 
+![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)
+![Flask](https://img.shields.io/badge/Flask-Backend-black?style=for-the-badge&logo=flask)
+![Scikit Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?style=for-the-badge&logo=scikitlearn)
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
+</div>
 
+---
 
+# 📖 About
 
+PhishGuard AI is an intelligent phishing detection platform developed to help users identify potentially malicious Emails, URLs, and SMS messages using Machine Learning techniques.
 
-📖 About
+The project combines a modern web interface with AI models to provide quick and user-friendly phishing analysis.
 
-PhishGuard AI is a cybersecurity-based web application that helps users identify phishing attacks before they become victims.
+---
 
-The application provides an intuitive interface where users can scan:
+# ✨ Features
 
-📧 Emails
-🌐 URLs
-💬 SMS Messages
+- 📧 Email Phishing Detection
+- 🌐 URL Scanner
+- 💬 SMS Scanner
+- 🤖 Machine Learning Prediction
+- 📊 Risk Score Analysis
+- ⚡ Interactive Loading Animation
+- 🎨 Modern Glassmorphism UI
+- 📱 Responsive Design
+- 🔒 Cybersecurity Focused
 
-The Email Scanner uses a Machine Learning model trained on phishing email datasets to classify content as Safe or Phishing.
+---
 
-✨ Features
-🛡️ AI-Powered Email Phishing Detection
-🌐 URL Scanner Interface
-💬 SMS Scanner Interface
-⚡ Premium AI Loading Animation
-📊 Dynamic Risk Score
-🎨 Modern Glassmorphism UI
-🚀 Flask Backend
-🤖 Machine Learning Integration
-📱 Responsive Design
-🔍 Real-Time Scan Results
-🛠 Tech Stack
-Frontend
-HTML5
-CSS3
-JavaScript
-Backend
-Flask
-Machine Learning
-Scikit-learn
-Pandas
-NumPy
-Joblib
-TF-IDF Vectorizer
-Logistic Regression
-📂 Project Structure
+# 🛠️ Tech Stack
+
+| Category | Technologies |
+|-----------|--------------|
+| Frontend | HTML5, CSS3, JavaScript |
+| Backend | Flask |
+| Machine Learning | Scikit-learn, Pandas, NumPy |
+| Model | Logistic Regression, TF-IDF |
+| Tools | VS Code, Git, GitHub |
+
+---
+
+# 📂 Project Structure
+
+```text
 PhishGuard-AI/
-
-│── app.py
-
+│
+├── app.py
 │
 ├── dataset/
-│     ├── phishing_email.csv
+│   └── phishing_email.csv
 │
 ├── model/
-│     ├── train_model.py
-│     ├── phishing_model.pkl
-│     └── vectorizer.pkl
+│   ├── train_model.py
+│   ├── phishing_model.pkl
+│   └── vectorizer.pkl
 │
 ├── utils/
-│     └── predictor.py
+│   └── predictor.py
 │
 ├── static/
-│     ├── css/
-│     ├── js/
-│     └── images/
+│   ├── css/
+│   ├── js/
+│   └── images/
 │
 ├── templates/
-│     ├── index.html
-│     ├── scanner.html
-│     ├── email.html
-│     ├── url.html
-│     ├── sms.html
-│     └── result.html
+│   ├── index.html
+│   ├── scanner.html
+│   ├── email.html
+│   ├── url.html
+│   ├── sms.html
+│   └── result.html
 │
 └── README.md
-🚀 Installation
+```
 
-Clone the repository
+---
 
+# 🚀 Installation
+
+### 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/your-username/PhishGuard-AI.git
+```
 
-Go to the project directory
+### 2️⃣ Navigate to the Project
 
+```bash
 cd PhishGuard-AI
+```
 
-Install dependencies
+### 3️⃣ Install Dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
-Run the application
+### 4️⃣ Run the Application
 
+```bash
 python app.py
+```
 
-Open your browser
+### 5️⃣ Open in Browser
 
+```
 http://127.0.0.1:5000
-🧠 Machine Learning Workflow
-Email Input
-      │
-      ▼
-Text Cleaning
-      │
-      ▼
+```
+
+---
+
+# 🧠 Machine Learning Workflow
+
+```text
+User Input
+     │
+     ▼
+Data Preprocessing
+     │
+     ▼
 TF-IDF Vectorization
-      │
-      ▼
-Logistic Regression
-      │
-      ▼
+     │
+     ▼
+Logistic Regression Model
+     │
+     ▼
 Prediction
-      │
-      ▼
+     │
+     ▼
 Risk Analysis
-      │
-      ▼
-Result Page
-📷 Screenshots
+     │
+     ▼
+Display Result
+```
 
-Add screenshots of:
+---
 
-Home Page
-Scanner Page
-Email Scanner
-Loading Animation
-Result Page
+# 📸 Screenshots
 
-Example:
+| Home | Scanner |
+|------|----------|
+| Add Screenshot | Add Screenshot |
 
-screenshots/
-├── home.png
-├── scanner.png
-├── email.png
-├── loading.png
-└── result.png
-🎯 Future Improvements
-🌐 Real AI-based URL Detection
-💬 AI-based SMS Detection
-📊 Dashboard & Analytics
-📜 Scan History
-📄 PDF Report Generation
-👤 User Authentication
-☁️ Cloud Deployment
-🔒 Threat Intelligence Integration
-📈 Current Progress
-Module	Status
-Landing Page	✅
-Scanner UI	✅
-Email AI	✅
-URL Scanner	🚧 In Progress
-SMS Scanner	🚧 In Progress
-Flask Backend	✅
-Machine Learning	✅
-🤝 Contributing
+| Email Scanner | Result |
+|---------------|--------|
+| Add Screenshot | Add Screenshot |
+
+---
+
+# 📈 Current Progress
+
+| Module | Status |
+|---------|:------:|
+| Landing Page | ✅ |
+| Scanner UI | ✅ |
+| Email Detection | ✅ |
+| URL Detection | 🚧 |
+| SMS Detection | 🚧 |
+| Flask Backend | ✅ |
+| Machine Learning | ✅ |
+
+---
+
+# 🎯 Future Enhancements
+
+- 🌐 AI-Based URL Detection
+- 💬 AI-Based SMS Detection
+- 📊 Dashboard & Analytics
+- 📜 Scan History
+- 📄 PDF Report Generation
+- 👤 User Authentication
+- ☁️ Cloud Deployment
+- 🔐 Threat Intelligence Integration
+
+---
+
+# 🤝 Contributing
 
 Contributions are welcome!
 
-Fork the repository
-Create a new branch
-Commit your changes
-Push the branch
-Open a Pull Request
-👨‍💻 Author: Sparsh kulshrestha
+1. Fork this repository
+2. Create a feature branch
+3. Commit your changes
+4. Push the branch
+5. Open a Pull Request
 
-MCA Student | Tech Enthusiast
+---
+
+# 👨‍💻 Developer
+
+**Sparsh Kulshrestha**
+
+🎓 MCA Student
+
+💻 AI & Cybersecurity Enthusiast
 
 GitHub: https://github.com/your-username
 
 LinkedIn: https://linkedin.com/in/your-profile
 
-⭐ Support
+---
 
-If you found this project helpful, please consider giving it a ⭐ on GitHub. It helps others discover the project and motivates further development.
+<div align="center">
 
-📜 License
+### ⭐ If you like this project, consider giving it a Star!
 
-This project is licensed under the MIT License. Feel free to use, modify, and distribute it for learning and educational purposes.
+Made with ❤️ using Python, Flask, and Machine Learning.
+
+</div>
