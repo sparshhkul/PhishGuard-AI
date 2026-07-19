@@ -145,7 +145,7 @@ Display Result
 
 ---
 
-# 📸 Screenshots
+<!-- # 📸 Screenshots
 
 | Home | Scanner |
 |------|----------|
@@ -155,7 +155,7 @@ Display Result
 |---------------|--------|
 | Add Screenshot | Add Screenshot |
 
----
+--- -->
 
 # 📈 Current Progress
 
